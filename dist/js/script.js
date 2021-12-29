@@ -62,6 +62,9 @@ $(".pallet").click(function(e){
     $("#color3").text(color3);
     $("#color4").text(color4);
 });
+//************************ *//
+
+//forma
 
 $("#submit").click(function(e) {
     e.preventDefault();
@@ -86,7 +89,7 @@ else if(parseInt(birthdate)-now == 0) {
     alert("Jus gimete siais metai")
 } else {
 
-    
+
     document.getElementById("table").style = "";
 
     let year = new Date();
@@ -114,3 +117,5 @@ else if(parseInt(birthdate)-now == 0) {
 // $("clear").click(function(e){
 //     e.preventDefault();
 // })
+
+//************************** */
