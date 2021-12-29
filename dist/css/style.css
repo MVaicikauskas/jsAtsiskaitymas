@@ -316,7 +316,21 @@ bottom: 91.8%;
 }
 
 .table {
-    height: 100px;;
+    
     width: 100%;
     
 }
+tbody {
+    width: 50%;
+    background-color: rgb(183, 185, 43);
+    border: 2px solid rgb(117, 119, 21);
+    margin: 0 auto;
+    text-align: center;
+
+}
+
+tr, td {
+    border: 2px solid rgb(117, 119, 21);
+    width: 100px;
+}
+

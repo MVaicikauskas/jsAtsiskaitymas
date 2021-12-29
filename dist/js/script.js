@@ -85,6 +85,8 @@ else if(parseInt(birthdate) > now) {
 else if(parseInt(birthdate)-now == 0) {
     alert("Jus gimete siais metai")
 } else {
+
+    
     document.getElementById("table").style = "";
 
     let year = new Date();
@@ -93,7 +95,7 @@ else if(parseInt(birthdate)-now == 0) {
 
     names.push(name);
     lastnames.push(lastname);
-    birthdates.push(birthdate);
+    birthdates.push(age);
     indexes.push(index);
     index = index + 1;
 
