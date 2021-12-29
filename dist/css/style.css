@@ -1,0 +1,322 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    padding: 0;
+    font-family: 'Josefin Sans', sans-serif;
+    background: linear-gradient(300deg,deepskyblue,darkviolet,blue);
+    background-size: 180% 180%;
+    animation: gradient-animation 18s ease infinite;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+
+.mainSection {
+    width: 100%;
+    height: 100vh;
+    padding: 10px;
+ 
+}
+
+
+.navbarBox {
+    width: 98%;
+    height: 50px;
+    
+    position: absolute;
+    display: inline-block;
+}
+
+.navbar {
+display: flex;
+list-style: none;
+justify-content: center;
+width: 98%;
+height: 50px;
+align-items: center;
+margin: 0;
+transition: 0.3s ease-in-out;
+flex-wrap: wrap;
+background-color:orange;
+border-radius: 10px;
+position: fixed;
+z-index: 998;
+bottom: 91.8%;
+
+}
+/* hidden */
+.hidden {
+    
+    width: 0px;
+}
+/* *********** */
+
+/* JS burger color, rotation class */
+
+.down {
+    transform: rotate(90deg);
+    background-color: green;
+    
+}
+
+/* ******************************** */
+
+
+
+.navbar ul {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar li {
+    list-style: none;
+    text-align: center;
+    width: 20%;
+    height: 100%;
+    position: relative;
+    
+}
+
+.navbar a{
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+}
+
+.navButton {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    background-color: blue;
+    bottom: 91.8%;
+    left: 97%;
+    transform: translate(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 5px;
+    position: fixed;
+    z-index: 999;
+    border: 2px solid white;
+
+}
+
+.controls {
+    width: 100%;
+    height: 50%;
+    background-color: gray;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px black;
+    
+}
+
+
+
+.controls button {
+    height: 25px;
+    width: 100px;
+    border-radius: 10px;
+    border: 2px solid gray;
+    
+    
+}
+
+.heading1 {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+    z-index: 1;
+}
+
+.heading1 h3 {
+    text-align: center;
+    position: relative; 
+    left: 45%;
+}
+
+.controlBox {
+    width: 10%;
+    height: 85%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 10px;
+
+    
+}
+/* controls of cube */
+.showHide {
+    
+    width: 100px;
+    height: 100px;
+    background-color: blueviolet;
+    border-radius: 10px;
+    position: relative;
+    top: -70%;
+    left: 90%;
+}
+
+.widthChange {
+    width: 50px;
+    
+    height: 100px;
+    background-color: blueviolet;
+    border-radius: 10px;
+    position: relative;
+    top: -70%;
+    left: 90%;
+}
+
+.heightChange {
+    height: 50px;
+    width: 100px;
+    
+    background-color: blueviolet;
+    border-radius: 10px;
+    position: relative;
+    top: -70%;
+    left: 90%;
+}
+
+.centerChange {
+   
+    width: 100px;
+    height: 100px;
+    background-color: blueviolet;
+    border-radius: 10px;
+    position: relative;
+    left: 45%;
+    bottom: 50%;
+    
+}
+
+.positionChange {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    width: 100px;
+    height: 100px;
+    background-color: blueviolet;
+    border-radius: 10px;
+   
+}
+
+/* ******************* */
+
+
+.colors {
+    width: 100%;
+    height: 50%;
+    background-color: gray;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 10px 0;
+    box-shadow: 5px 5px 5px black;
+}
+
+.heading2 {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+}
+
+.heading2 h3 {
+    text-align: center;
+    position: relative;
+    left: 46%;
+}
+
+.colors p {
+    color: white;
+    text-align: center;
+    
+}
+
+/* colors of cubes */
+.pallet {
+    width: 120px;
+    height: 120px;
+    border-radius: 10px ;
+    background-color: black;
+    margin: 20px;
+    text-align: center;
+}
+
+/* ***************** */
+
+.formbox {
+    width: 100%;
+    background-color: gray;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px black;
+}
+
+.heading3 {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+}
+
+.heading3 h3 {
+    text-align: center;
+    position: relative;
+    left: 47%;
+}
+
+.form{
+    width: 25%;
+    height: 70%;
+    display: inline-block;
+    position: relative;
+    left: 37%;
+    
+}
+
+.form input, label {
+    width: 100%;
+}
+
+.form button {
+   position: relative;
+   left: 40%;
+
+}
+.formButton2 {
+    position: relative;
+    left: -20%;
+    
+}
+
+.table {
+    height: 100px;;
+    width: 100%;
+    
+}

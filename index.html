@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500&display=swap" rel="stylesheet">  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="dist/css/style.css">
+</head>
+<body>
+    <section class="mainSection">
+        <!-- navbar -->
+        <section id="navbarBox" class="navbarBox">
+            <!-- navbar -->
+            
+            <div id="navbar" class="navbar">
+                <ul class="menuItems">
+                    <li><a href="#controls">Controls of Div</a></li>
+                    <li><a href="#colors">Colors</a></li>
+                    <li><a href="#formbox">Form</a></li>
+                </ul>
+            </div>
+            <!-- menu button -->
+            <div id="navButton" class="navButton"><i class="fas fa-bars"></i></div>
+        </section>
+        <!-- control of div -->
+        <section class="controls" id="controls">
+            <div class="heading1"><h3>Controls of Div</h3></div>
+            <div class="controlBox">
+                <button class="show">Show/ Hide</button>
+                <button class="width">Width</button>
+                <button class="height">Height</button>
+                <button class="center">Center</button>
+                <button class="position">Position</button>
+            </div>
+            <div class="cube"></div>
+        </section>
+        <!-- colors -->
+        <section class="colors" id="colors">
+            <div class="heading2"><h3>Color cubes</h3></div>
+            <div id="color1" class="pallet"></div>
+            <div id="color2" class="pallet"></div>
+            <div id="color3" class="pallet"></div>
+            <div id="color4" class="pallet"></div>
+        </section>
+        <!-- Form -->
+        <section class="formbox" id="formbox">
+            <div class="heading3"><h3>Forma</h3></div>
+            <form action="" id="form">
+                <div class="form">
+                    <label for="name">Vardas</label>
+                    <input type="text" name="name" id="name">
+                    <label for="lastname">Pavarde</label>
+                    <input type="text" name="lastname" id="lastname">
+                    <label for="age">Gimimo metai</label>
+                    <input type="text" name="age" id="age" placeholder="MMMM">
+                    <button id="submit" class="formButton">Patrvitinti</button>
+                </div>
+            </form>
+            <button id="clear" class="formButton2">Išvalyti sarasa</button>
+            <div id="table">
+                <table id="tableData">
+
+                </table>
+            </div>
+            
+        </section>
+    </section>
+    
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="dist/js/script.js"></script>
+</body>
+</html>
