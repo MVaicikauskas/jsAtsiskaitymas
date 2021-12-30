@@ -95,27 +95,42 @@ else if(parseInt(birthdate)-now == 0) {
     let year = new Date();
     let now = year.getFullYear();
     let age = now - parseInt(birthdate);
+    let names = [];
+    let lastnames = [];
+    let birthdates = [];
+    let indexes = [];
+    let index = 0;
 
     names.push(name);
     lastnames.push(lastname);
     birthdates.push(age);
     indexes.push(index);
-    index = index + 1;
+    indexes = index + 1;
 
-    let tr = "<tr class='duomenys'><td>"+indexes[indexes.lenght-1]+"</td><td>"+names[names.lenght-1]+"</td><td>"+lastnames[lastnames.lenght-1]+"</td><td>"+birthdates[birthdates.lenght-1]+"</td></tr>";
+    let tr = "<tr class='duomenys'><td>"+indexes+"</td><td>"+name+"</td><td>"+lastname+"</td><td>"+age+"</td></tr>";
 
     $("#tableData").append(tr);
 
     $("#name").val("");
-    $("lastname").val("");
-    $("age").val("");
+    $("#lastname").val("");
+    $("#age").val("");
 
 }
+$("#clear").click(function(){
+    alert("duomenys bus istrinti!!!")
+    tr.splice(0, tr.length);
+    $("#tableData").empty();
+    
 
+})
 });
 
-// $("clear").click(function(e){
-//     e.preventDefault();
-// })
+
+
 
 //************************** */
+
+
+
+
+
